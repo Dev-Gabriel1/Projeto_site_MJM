@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+      
+    <!-- Navegador, item principal para navegação na pagina -->
+    <nav class="navbar navbar-expand-lg cor-nav font-nav">
+        <div class="container-fluid position-logo">
+                        <a class="navbar-brand cor-nav" href="#"><img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\Logo.png" alt="" width="100" height="50" class="d-inline-block align-text-top"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+        <div class="collapse navbar-collapse justify-content-end cor-nav" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                 <a class="nav-link active cor-nav " style ="margin-right:20px; "aria-current="page" href="#empresa">A Empresa</a>
+                <a class="nav-link active cor-nav " style ="margin-right:20px;" href="#cliente">Parceiros</a>
+                <a class="nav-link active  cor-nav " style ="margin-right:20px;"href="#servico">Serviços</a>
+                <a class="nav-link active  cor-nav " style ="margin-right:20px; "href="#contato">Contato</a>
+           </div>
+         </div>
+       </div>   
+    </nav>
+    <!--  Slide De apresentação de Serviços Realizados -->
+    <div  id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+     <!-- Primeiro slide Restauração -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\primeiroservico.jpg" class="d-block w-100 img-config" alt="...">
+            <div class="carousel-caption d-none d-md-block titulo-slider">
+              <h5>RESTAURAÇÃO PÚLPITO</h5>
+              <p>Restauração de púlpito em madeira da capela de Maceió - Maceió/AL
+                Contratante: FM group Maceio</p>
+            </div>
+          </div>
+          <!-- segundo slide Pintura interna-->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\segundoserviço.jpg" class="d-block w-100 img-config" alt="...">
+            <div class="carousel-caption d-none d-md-block titulo-slider ">
+              <h5>PINTURA INTERNA E REPAROS</h5>
+              <p>Pintura interna e reparos em paredes, salas e telhado do Banco Santander, agência Cruz Cabugá -
+                Recife/PE
+                Contratante: Banco Santander</p>
+            </div>
+          </div>
+                <!-- Terceiro slide Muro de Arrimo -->
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\terceiroserviço.jpg" class="d-block w-100 img-config" alt="...">
+            <div class="carousel-caption d-none d-md-block titulo-slider">
+              <h5>CONSTRUÇÃO DO MURO DE ARRIMO</h5>
+              <p>Costrução do muro de arrimo da igreja ,Capela João Pessoa/PB
+                Contratante: FM group João Pessoa</p>
+            </div>
+          </div>
+          <!-- Quarto slide MReforma de Quadra Poliesportiva-->
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\quartoservico.jpg" class="d-block w-100 img-config" alt="...">
+            <div class="carousel-caption d-none d-md-block titulo-slider">
+              <h5>REFORMA DE QUADRA POLIESPORTIVA</h5>
+              <p>Pintura, demarcação e reparos da quadra poliesportiva. Reforço estrutural
+                do alambrado e iluminação - Maceió/AL
+                Contratante: FM group Maceió</p>
+            </div>
+          </div>
+        </div>
+        <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>-->
+      </div>
+
+      </div>
+            <div id="empresa"  class="bg-sobre">
+            <!-- Apresentação da Empresa -->
+            <div class="jumbotron  formatacao ">
+              <h1 style="text-align: center;">Sobre Nós</h1>
+              <p class="lead">Fundada em 2013, com sua sede localizada na região metropolitana
+                do recife, a Empreiteira MJM Serviços e Manutenção Ltda-ME, é uma
+                empresa brasileira que se constituiu ao longo deste período especializando-se em obras civis, acumulando experiência e crescendo no mercado graças
+                aos méritos obtidos por trabalhos prestados em diversos segmentos da
+                construção nas áreas comerciais, industriais e habitacionais.</p>
+              <hr class="my-4">
+              <p class="lead"></p>
+              </div>
+            
+              <div class="row row-cols-1 row-cols-md-3 card-config ">
+                <div class="col ">
+                  <div class="card card-config"style="background-color:white">
+                    <div class="card-body">
+                      <h3 class="card-title "></b>Missão</b></h3>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-config" style="background-color:white">
+                    <div class="card-body">
+                      <h3 class="card-title "></b>Visão</b></h3>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-config" style="background-color:white">
+                    <div class="card-body">
+                    <h3 class="card-title ">Valores</h3>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!--Tipos de Serviços-->
+        <div class="bg-servico" id="servico">
+            <div class="title-servico display-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"></path>
+          </svg>   Manutenção e serviços</div>
+          <div class="row row-cols-1 row-cols-md-3 card-config ">
+            <div class="col ">
+              <div class="card card-servico" >
+                <div class="card-body">
+                  <h3 class="card-title "></b>Arquitetura e Urbanismo</b></h3>
+                  <ul class="list-1">
+                    <li class="ls">Projetos arquitetônicos (básico e executivo)</li>
+                    <li class="ls">Pinturas, texturas, carpintaria, marcenaria, serralheria, vidraçaria,
+                      coberturas, alvenarias e forros.</li>
+                    <li class="ls">Pisos, pavimentações e revestimento </li>
+                    <li class="ls">Reurbanização, projetos e execuções de paisagismo.</li>
+                    </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-servico">
+                <div class="card-body">
+                  <h3 class="card-title "></b>Construção civil</b></h3>
+                  <ul class="list-2">
+                    <li class="ls">Construções de médio e grande porte.</li>
+                    <li class="ls">Projetos hidráulicos, estrutural, drenagem.</li>
+                    <li class="ls">Projetos e execuções de obras, reformas e demolições. </li>
+                    <li class="ls">Avaliação de Terrenos, Terraplanagens, Fundações e Estruturas.</li>
+                    <li class="ls">Impermeabilização.
+                    </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-servico">
+                <div class="card-body">
+                <h3 class="card-title "></b>Engenharia Elétrica e Eletrônica</b></h3>
+                <ul class="list-group list-group-flush list-3">
+                  <li class="ls">Montagem e instalações de Painéis Digitalizados de Comando, 
+                    Controle e Proteção.</li>
+                  <li class="ls">Painéis de Serviços Auxiliares CA e CC.</li>
+                  <li class="ls">Refrigeração.</li>
+                  <li class="ls">Quadros de Força.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+             <div id="cliente" class="clientes ">
+              <div class=" display-6 " style="padding-top: 50px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>  Clientes</div>
+                  <img  class="img-fluid" src="Clientes.png" alt=" Clientes">
+             </div> 
+
+             <div id="contato" class="contatos">
+                    <div>
+                        <div class="title-horario"><h3 style="padding-top: 40px;">Horario de Funcionamento e Contatos</h3></div>
+                        <ul class="horario">
+                            <li>Segunda á Sexta____________7:40 ás 17:00</li>
+                            <li>Sábado_____________________7:40 ás 12:00</li>
+                            <li>Domingo____________________<b>FECHADO</b></li> 
+                        </ul>
+                      </div>
+                        <div class="config-link">
+                        <a class="config-link" href="tel:+5571999999999" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>  (81)3568-0098</a> </br></br>
+                        <a class="config-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>  (81)90000-0000</a></br></br>
+                        <a class="config-link" href="mailto:someone@microsoft.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>  someone@microsoft.com</a>
+                      </div>
+                    </div>
+                    <div class="mensagem">
+
+                    </div>
+             </div>
+    </body>
+
+    <footer>
+      <div class="footer ">
+      <img src="G:\Desenvolvimento\EmpresaMJM\Projeto_site_MJM\Imagens\Logo.png" style="width:200px; height:100px;" alt=""><h3> MJM Manutenção e Serviços </h3>
+      <h5> CNPJ:00.000.000/0000-00</h5>
+      </div>
+    </footer>
+</html> 
